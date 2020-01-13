@@ -39,7 +39,7 @@ logging.basicConfig(level=logging.DEBUG)
 class TestVariable(unittest.TestCase):
 
     def test_init(self):
-        var1 = Variable("aa", "AA", "", "")
+        var1 = Variable("AA", "AA", "CC", "")
         var1.addMember(Variable("BB", "BB", "", ""))
         var1BB = var1.getMember("BB")
         var1BB.addMember(Variable("CC", "CC", "int32", "", [], [1]))
